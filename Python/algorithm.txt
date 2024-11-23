@@ -1,0 +1,5 @@
+1. Read input from user
+2. for loop, folder -> list files
+3. Identify module
+4. Print files
+5. handle known error

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-editor
+  namespace: kubernd
+  labels:
+    app: ubuntu-editor
+spec:
+  containers:
+  - name: ubuntu
+    image: ubuntu:latest
+    command: ["/bin/sh"]
+    args: ["-c", "apt-get update && apt-get install -y vim nano && sleep 3600"]
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always

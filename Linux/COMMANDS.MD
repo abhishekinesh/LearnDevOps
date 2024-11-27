@@ -88,11 +88,12 @@
 1. A command often used for showing memory information
 
     free -m [-m : In megabytes] [-h : human readable / -g : gigabytes]
-
+    '''
     free -h
                 total        used        free      shared  buff/cache   available
     Mem:            7.7G        3.4G        2.2G        120M        2.0G        4.1G
     Swap:           2.0G        512M        1.5G
+    '''
 
         total: The total amount of physical memory available in the system.
         used: The amount of memory currently used by processes and the operating system.

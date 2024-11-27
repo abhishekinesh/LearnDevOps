@@ -2,34 +2,34 @@
 # ADD ENVIRONMENT VARIABLE TO PATH
 
 1. Add '/rnd' to the PATH environment variable temporarily
-    export PATH=$PATH:/rnd
+    # export PATH=$PATH:/rnd
 
 2. Verify the updated PATH
-    echo $PATH
+    # echo $PATH
 
 3. Display all environment variables
-    env
+    # env
 
 
 # ADD USER and PATH
 
 1. Create a User
-    sudo useradd abhi
+    # sudo useradd abhi
 
 2. Set a Password for the User
-    sudo passwd abhi
+    # sudo passwd abhi
 
 3. Create Home Directory for the User
-    sudo mkdir /home/abhi
+    # sudo mkdir /home/abhi
 
 4. Set Ownership of Home Directory
-    sudo chown abhi:abhi /home/abhi
+    # sudo chown abhi:abhi /home/abhi
 
 5. Update User's Home Directory Information
-    sudo usermod -d /home/abhi abhi
+    # sudo usermod -d /home/abhi abhi
 
 6. Switch to the User
-    su - abhi
+    # su - abhi
 
 # GROUP MANAGEMENT
 

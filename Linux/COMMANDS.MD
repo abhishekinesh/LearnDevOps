@@ -2,85 +2,85 @@
 # ADD ENVIRONMENT VARIABLE TO PATH
 
 1. Add '/rnd' to the PATH environment variable temporarily
-    # export PATH=$PATH:/rnd
+    ## export PATH=$PATH:/rnd
 
 2. Verify the updated PATH
-    # echo $PATH
+    ## echo $PATH
 
 3. Display all environment variables
-    # env
+    ## env
 
 
 # ADD USER and PATH
 
 1. Create a User
-    # sudo useradd abhi
+    ## sudo useradd abhi
 
 2. Set a Password for the User
-    # sudo passwd abhi
+    ## sudo passwd abhi
 
 3. Create Home Directory for the User
-    # sudo mkdir /home/abhi
+    ## sudo mkdir /home/abhi
 
 4. Set Ownership of Home Directory
-    # sudo chown abhi:abhi /home/abhi
+    ## sudo chown abhi:abhi /home/abhi
 
 5. Update User's Home Directory Information
-    # sudo usermod -d /home/abhi abhi
+    ## sudo usermod -d /home/abhi abhi
 
 6. Switch to the User
-    # su - abhi
+    ## su - abhi
 
 # GROUP MANAGEMENT
 
 1. Create a new group named 'developers'
-    sudo groupadd developers
+    ## sudo groupadd developers
 
 2. Add user 'abhi' to the 'developers' group
-    sudo usermod -aG developers abhi
+    ## sudo usermod -aG developers abhi
 
 3. Remove user 'abhi' from the 'developers' group
-    sudo gpasswd -d abhi developers
+    ## sudo gpasswd -d abhi developers
 
 4. Delete the 'developers' group
-    sudo groupdel developers
+    ## sudo groupdel developers
 
 5. List all groups
-    cat /etc/group
+    ## cat /etc/group
 
 6. Change a user's primary group
-    sudo usermod -g groupname username
+    ## sudo usermod -g groupname username
 
 
 
 # FILE MANAGEMENT
 
 1. Change file permissions to read, write, and execute for the owner, and read and execute for the group and others
-    chmod 755 filename
+    ## chmod 755 filename
 
 2. Change file permissions to read and write for the owner, and read-only for the group and others
-    chmod 644 filename
+    ## chmod 644 filename
 
 3. Change the owner of a file
-    sudo chown new_owner filename
+    ## sudo chown new_owner filename
 
 4. Change the owner and group of a file
-    sudo chown new_owner:new_group filename
+    ## sudo chown new_owner:new_group filename
 
 5. Change the group ownership of a file
-    sudo chgrp new_group filename
+    ## sudo chgrp new_group filename
 
 6. Example: Set 'example.txt' to read, write, and execute for the owner, and read and execute for the group and others
-    chmod 755 example.txt
+    ## chmod 755 example.txt
 
 7. Example: Change the owner of 'example.txt' to 'alice'
-    sudo chown alice example.txt
+    ## sudo chown alice example.txt
 
 8. Example: Change the owner and group of 'example.txt' to 'alice' and 'developers'
-    sudo chown alice:developers example.txt
+    ## sudo chown alice:developers example.txt
 
 9. Example: Change the group of 'example.txt' to 'developers'
-    sudo chgrp developers example.txt
+    ## sudo chgrp developers example.txt
 
 
 # SERVER MANAGEMENT

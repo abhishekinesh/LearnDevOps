@@ -109,54 +109,54 @@
 <!-- The swap state refers to the status of the swap space or swap partition in a Linux system. Swap space is used as a virtual memory extension of the physical memory (RAM). When the RAM is full, inactive pages of memory are moved to the swap space to free up RAM for active processes. This helps prevent system crashes and ensures smooth operation even when the memory is heavily used -->
 
 2. A command for showing disk usage
-    df -h
+    ## df -h
 
 3. A command for showing CPU load
-    uptime
+    ## uptime
 
 4. A command for showing Authentication logs
-    tail /var/log/auth.log
+    ## tail /var/log/auth.log
 
 
 5. List all services managed by systemd/service
-    sudo systemctl list-units --type=service
-    service --status-all
+    ## sudo systemctl list-units --type=service
+    ## service --status-all
 
 
 # MANAGING BACKGROUND AND FOREGROUND PROCESSES
 
 1. Running a Process in the Foreground:
-   command
+   ## command
 
 2. Moving a Running Process to the Background:
    [Ctrl + Z]   
-   bg           
+   ## bg           
 
 3. Starting a Process in the Background:
-   command &
+   ## command &
 
 4. Listing Background Jobs:
-   jobs
+   ## jobs
 
 5. Bringing a Background Job to the Foreground:
-   fg %1
+   ## fg %1
 
 6. Killing a Background Job:
-   kill %1
+   ## kill %1
 
 <!-- EXAMPLE COMMANDS -->
 
 7. Starting a Command in the Background:
-   sleep 100 &
+   ## sleep 100 &
 
 8. Moving a Foreground Process to the Background:
-   sleep 100  
+   ## sleep 100  
    [Ctrl + Z]
    bg         
 
 9. Listing Jobs and Bringing One to the Foreground:
-   jobs       
+   ## jobs       
    fg %1      
 
 10. Killing a Background Job:
-    kill %1    
+    ## kill %1    
